@@ -13,7 +13,7 @@ function apresentarEmpresa(){
       +"<div class='conteudoCard'>"
 
         +"<div class='imagensEmpresa'>"
-          + "<img src="
+          + "<img class='imgEmpresa' src="
           + empresa["empresa"]["imgsServicos"][0]
           + "/>"
         +"</div>" //fim da div ImagensEmpresa
@@ -41,7 +41,7 @@ function apresentarEmpresa(){
           + "<div class='numeroIndicacoes'>"
           + empresa["empresa"]["indicacoes"]
           + "</div>" //fim da div numeroIndicacoes
-          + "<div class='termoIndicadoes'>"
+          + "<div class='termoIndicacoes'>"
           + "indicações"
           + "</div>" // fim da div termoIndicacoes
 
