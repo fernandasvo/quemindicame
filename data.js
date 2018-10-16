@@ -19,10 +19,10 @@ const bancoDados = {
         "email": "serralheriaanthares@uol.com.br",
       },//fim do objeto "contato"//
       "imgsServicos": [
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwixoKam3oTeAhXJgJAKHegADGMQjRx6BAgBEAU&url=http%3A%2F%2Fnice.com.br%2Fportao-desbalanceado-veja-dicas-de-como-agir-neste-caso%2F&psig=AOvVaw3FZs2yC9yYRgGyzliZOC7m&ust=1539565426657092",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiq1cTE3oTeAhVIgpAKHUT9Ac8QjRx6BAgBEAU&url=http%3A%2F%2Fwww.serralheria.curitiba.emp.br%2Fjanelas-campo-comprido%2Fjanela-de-aluminio-para-quarto-campo-comprido&psig=AOvVaw2F_LLjjhtc50U3znXHD0PI&ust=1539565490313432",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9mLDP3oTeAhUMlZAKHfvFBjkQjRx6BAgBEAU&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-740824009-corrimao-para-escada-aluminio-kit-1-metro-linear-branco-_JM&psig=AOvVaw1RFHV7JqekIm8ZniZ0IIaA&ust=1539565513869694",
-      ],//fim do array "imagensServicos"
+        "https://images.pexels.com/photos/51002/fence-railing-wrought-iron-barrier-51002.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/911999/pexels-photo-911999.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/922796/pexels-photo-922796.jpeg?auto=compress&cs=tinysrgb&h=350"
+            ],//fim do array "imagensServicos"
       "indicacoes": 2,
     } //fim do objeto "empresa"
     },//PERGUNTAR PRA QUE SERVE ESSA CHAVE
@@ -45,9 +45,9 @@ const bancoDados = {
         "email": "serralheriaanthares@uol.com.br",
       },//fim do objeto "contato"//
       "imgsServicos": [
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwixoKam3oTeAhXJgJAKHegADGMQjRx6BAgBEAU&url=http%3A%2F%2Fnice.com.br%2Fportao-desbalanceado-veja-dicas-de-como-agir-neste-caso%2F&psig=AOvVaw3FZs2yC9yYRgGyzliZOC7m&ust=1539565426657092",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiq1cTE3oTeAhVIgpAKHUT9Ac8QjRx6BAgBEAU&url=http%3A%2F%2Fwww.serralheria.curitiba.emp.br%2Fjanelas-campo-comprido%2Fjanela-de-aluminio-para-quarto-campo-comprido&psig=AOvVaw2F_LLjjhtc50U3znXHD0PI&ust=1539565490313432",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9mLDP3oTeAhUMlZAKHfvFBjkQjRx6BAgBEAU&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-740824009-corrimao-para-escada-aluminio-kit-1-metro-linear-branco-_JM&psig=AOvVaw1RFHV7JqekIm8ZniZ0IIaA&ust=1539565513869694",
+        "https://images.pexels.com/photos/973401/pexels-photo-973401.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/247322/pexels-photo-247322.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/1234901/pexels-photo-1234901.jpeg?auto=compress&cs=tinysrgb&h=350",
       ],//fim do array "imagensServicos"
       "indicacoes": 5,
     } //fim do objeto "empresa"
@@ -71,9 +71,9 @@ const bancoDados = {
         "email": "serralheriaanthares@uol.com.br",
       },//fim do objeto "contato"//
       "imgsServicos": [
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwixoKam3oTeAhXJgJAKHegADGMQjRx6BAgBEAU&url=http%3A%2F%2Fnice.com.br%2Fportao-desbalanceado-veja-dicas-de-como-agir-neste-caso%2F&psig=AOvVaw3FZs2yC9yYRgGyzliZOC7m&ust=1539565426657092",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiq1cTE3oTeAhVIgpAKHUT9Ac8QjRx6BAgBEAU&url=http%3A%2F%2Fwww.serralheria.curitiba.emp.br%2Fjanelas-campo-comprido%2Fjanela-de-aluminio-para-quarto-campo-comprido&psig=AOvVaw2F_LLjjhtc50U3znXHD0PI&ust=1539565490313432",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9mLDP3oTeAhUMlZAKHfvFBjkQjRx6BAgBEAU&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-740824009-corrimao-para-escada-aluminio-kit-1-metro-linear-branco-_JM&psig=AOvVaw1RFHV7JqekIm8ZniZ0IIaA&ust=1539565513869694",
+        "https://images.pexels.com/photos/374861/pexels-photo-374861.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/175709/pexels-photo-175709.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/345135/pexels-photo-345135.jpeg?auto=compress&cs=tinysrgb&h=350",
       ],//fim do array "imagensServicos"
       "indicacoes": 3,
     } //fim do objeto "empresa"
@@ -85,33 +85,7 @@ const bancoDados = {
       "usuarioProprietario": "fernandasvo",
       "nome": "Vidros Flex",
       "ramo": "Vidraçaria",
-      "servicos": ["Sacadas", "Janelas"],
-      "endereco": {
-        "rua": "Rua Rio de Janeiro, 129",
-        "cidade": "Cubatão",
-        "estado": "SP"
-      },//fim do objeto "endereco"//
-      "contato": {
-        "telefone": "+55 13 3232.1905",
-        "celular": "+55 13 98111.0186",
-        "email": "serralheriaanthares@uol.com.br",
-      },//fim do objeto "contato"//
-      "imgsServicos": [
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwixoKam3oTeAhXJgJAKHegADGMQjRx6BAgBEAU&url=http%3A%2F%2Fnice.com.br%2Fportao-desbalanceado-veja-dicas-de-como-agir-neste-caso%2F&psig=AOvVaw3FZs2yC9yYRgGyzliZOC7m&ust=1539565426657092",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiq1cTE3oTeAhVIgpAKHUT9Ac8QjRx6BAgBEAU&url=http%3A%2F%2Fwww.serralheria.curitiba.emp.br%2Fjanelas-campo-comprido%2Fjanela-de-aluminio-para-quarto-campo-comprido&psig=AOvVaw2F_LLjjhtc50U3znXHD0PI&ust=1539565490313432",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9mLDP3oTeAhUMlZAKHfvFBjkQjRx6BAgBEAU&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-740824009-corrimao-para-escada-aluminio-kit-1-metro-linear-branco-_JM&psig=AOvVaw1RFHV7JqekIm8ZniZ0IIaA&ust=1539565513869694",
-      ],//fim do array "imagensServicos"
-      "indicacoes": 2,
-    } //fim do objeto "empresa"
-    },//PERGUNTAR PRA QUE SERVE ESSA CHAVE
-
-    {//PERGUNTAR PRA QUE SERVE ESSA CHAVE
-    "empresa": {
-      "id": 1,
-      "usuarioProprietario": "fernandasvo",
-      "nome": "Serralheria Anthares",
-      "ramo": "Serralheria",
-      "servicos": ["Janelas", "Portões", "Corrimãos"],
+      "servicos": ["Sacadas", "Janelas", "Portas"],
       "endereco": {
         "rua": "Rua Rio de Janeiro, 129",
         "cidade": "Santos",
@@ -123,13 +97,14 @@ const bancoDados = {
         "email": "serralheriaanthares@uol.com.br",
       },//fim do objeto "contato"//
       "imgsServicos": [
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwixoKam3oTeAhXJgJAKHegADGMQjRx6BAgBEAU&url=http%3A%2F%2Fnice.com.br%2Fportao-desbalanceado-veja-dicas-de-como-agir-neste-caso%2F&psig=AOvVaw3FZs2yC9yYRgGyzliZOC7m&ust=1539565426657092",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiq1cTE3oTeAhVIgpAKHUT9Ac8QjRx6BAgBEAU&url=http%3A%2F%2Fwww.serralheria.curitiba.emp.br%2Fjanelas-campo-comprido%2Fjanela-de-aluminio-para-quarto-campo-comprido&psig=AOvVaw2F_LLjjhtc50U3znXHD0PI&ust=1539565490313432",
-        "https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj9mLDP3oTeAhUMlZAKHfvFBjkQjRx6BAgBEAU&url=https%3A%2F%2Fproduto.mercadolivre.com.br%2FMLB-740824009-corrimao-para-escada-aluminio-kit-1-metro-linear-branco-_JM&psig=AOvVaw1RFHV7JqekIm8ZniZ0IIaA&ust=1539565513869694",
+        "https://images.pexels.com/photos/273669/pexels-photo-273669.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/756550/pexels-photo-756550.jpeg?auto=compress&cs=tinysrgb&h=350",
+        "https://images.pexels.com/photos/210598/pexels-photo-210598.jpeg?auto=compress&cs=tinysrgb&h=350",
       ],//fim do array "imagensServicos"
       "indicacoes": 2,
     } //fim do objeto "empresa"
     },//PERGUNTAR PRA QUE SERVE ESSA CHAVE
+
 
 
   ] //fim do array "empresas"

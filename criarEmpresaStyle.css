@@ -65,89 +65,14 @@ body {
 
 
 /*main-------------------------------------*/
-.cardsEmpresas{
+
+
+.form {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
+	width: 50%;
 
 }
-
-.cardEmpresa{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: white;
-	border-radius: 4px;
-	margin: 20px;
-	height: 380px;
-	width: 300px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.conteudoCard {
-	height: 100%;
-	width: 100%;
-}
-
-.imagensEmpresa{
-	height: 50%;
-	width: 100%;
-}
-
-.imgEmpresa{
-	width: 100%;
-	height: 100%;
-}
-
-.infosEmpresa{
-	margin: 20px;
-}
-
-.ramoEmpresa{
-font-size: 0.85em;
-margin-top: 5px;
-color: grey;
-}
-
-.nomeEmpresa{
-	font-weight: bolder;
-	font-size: 1.2em;
-	margin-top: 8px;
-
-}
-
-.servicosEmpresa{
-	font-size: 0.9em;
-	margin-top: 8px;
-}
-
-.enderecoEmpresa {
-	font-size: 0.8em;
-	margin-top: 8px;
-	color: grey;
-}
-
-.indicacoesEmpresa{
-	display: flex;
-	justify-content: flex-end;
-	align-items: center;
-	padding-right: 20px;
-}
-
-.numeroIndicacoes {
-	font-weight: bold;
-	font-size: 2.5em;
-	margin-right: 3px;
-	color: #fecf07;
-}
-
-.termoIndicacoes {
-	font-weight: bold;
-	margin-left: 3px;
-	color: #fecf07;
-
-}
-
-
 
 /*fim do main-------------------------------------*/
 
