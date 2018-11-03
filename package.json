@@ -1,0 +1,34 @@
+{
+  "name": "Qi_Reprograma",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buscaScript.js",
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-scripts": "^2.1.1",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandasvo/quemindicame.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandasvo/quemindicame/issues"
+  },
+  "homepage": "https://github.com/fernandasvo/quemindicame#readme",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
