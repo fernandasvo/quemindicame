@@ -1,0 +1,20 @@
+.campo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: 0px;
+  border-radius: 4px;
+}
+
+.campo:focus {
+  outline: none;
+  border-color: #F48572;
+  box-shadow: 0 0 10px #F48572;
+}
+
+.campo__erro {
+  color: red;
+}

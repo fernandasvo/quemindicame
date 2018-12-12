@@ -44,9 +44,15 @@ table {
 }
 /*FIM RESET CSS---------------------------------*/
 
-.form {
+.formCriarEmpresa {
+	font-family: 'Lato', sans-serif;
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 100%;
+}
 
+.campoForm {
+	font-family: 'Lato', sans-serif;
+	margin: 5px;
+	width: 50%;
 }

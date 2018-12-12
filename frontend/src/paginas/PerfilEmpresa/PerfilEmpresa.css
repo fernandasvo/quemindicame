@@ -1,0 +1,112 @@
+*RESET css-------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*FIM RESET CSS---------------------------------*/
+
+.resumoEmpresa{
+  height:500px;
+  background-image: url('https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1200');
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.white {
+  color: white;
+}
+
+.nomeEmpresaPerfil{
+  font-size: 3em;
+  padding-bottom:30px;
+  padding-top: 20px;
+}
+
+.ramoEmpresaPerfil{
+  font-size: 1em;
+}
+.servicosEmpresaPerfil{
+  font-size: 1.5em;
+}
+
+.contato {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.iconContato{
+height: 60px;
+margin-right: 20px;
+}
+
+.divContato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.dadosContato{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.indicacoesEmpresaDiv{
+  padding: 30px;
+}
+
+.contato {
+  background: #f1f3f5;
+}
+
+.mapa{
+  width: 50%;
+}

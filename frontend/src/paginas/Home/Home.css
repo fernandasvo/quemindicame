@@ -1,0 +1,22 @@
+.landpage{
+  background-color: #70b1c5
+}
+
+.divLandpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+
+.logoLandpage{
+  height: 200px;
+}
+
+.realtimeboard{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+
+}
