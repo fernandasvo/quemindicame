@@ -18,7 +18,7 @@ class CriarIndicacao extends Component {
 
     if (cadastrando) {
       const dados = {
-        idUsuarioIndicador: form.idUsuarioIndicador.value,
+        //idUsuarioIndicador: form.idUsuarioIndicador.value,
         texto: form.texto.value,
         idEmpresa:this.props.empresaId
 
@@ -32,7 +32,7 @@ class CriarIndicacao extends Component {
     } else {
       const dados = {
         id: this.props.id,
-        idUsuarioIndicador: form.idUsuarioIndicador.value,
+        //idUsuarioIndicador: form.idUsuarioIndicador.value,
         texto: form.texto.value,
         idEmpresa: this.props.empresaId,
         //dataCriacao: "",
@@ -67,28 +67,12 @@ class CriarIndicacao extends Component {
         <input
           className="indicacao__titulo"
           type="text"
-          name="idUsuarioIndicador"
-          placeholder="id do usuário..."
-          autoComplete="off"
-          defaultValue={this.props.idUsuarioIndicador}
-        />
-        <input
-          className="indicacao__titulo"
-          type="text"
           name="texto"
           placeholder="Insira aqui sua indicação..."
           autoComplete="off"
           defaultValue={this.props.texto}
         />
-        <input
-          className="indicacao__titulo"
-          type="text"
-          name="idEmpresa"
-          placeholder="id da empresa..."
-          autoComplete="off"
-          defaultValue={this.props.idEmpresa}
-        />
-        {(cadastrando || this.state.editando) && (
+          {(cadastrando || this.state.editando) && (
           <button className="indicacao__botao-concluir">
             Eu indico!
           </button>

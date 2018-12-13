@@ -28,6 +28,7 @@ class CriarNegocio extends Component {
         nomeEmpresa: form.nomeEmpresa.value,
         ramo: form.ramo.value,
         servicos: form.servicos.value,
+        descricao:form.descricao.value,
         rua: form.rua.value,
         cidade: form.cidade.value,
         estado: form.estado.value,
@@ -56,6 +57,7 @@ class CriarNegocio extends Component {
             <input className="campoForm" name="idUsuarioProprietario" type="text" placeholder="idUsuarioProprietario?" autoComplete="off" defaultValue={this.props.idUsuarioProprietario}/>
             <input className="campoForm" name="nomeEmpresa" type="text" placeholder="Qual o nome do seu negócio?" autoComplete="off" defaultValue={this.props.nomeEmpresa}/>
             <input className="campoForm" name="ramo" type="text" placeholder="Qual o ramo do seu negócio?" autoComplete="off" defaultValue={this.props.ramo}/>
+            <input className="campoForm" name="descricao" type="text" placeholder="Fale um pouco sobre seu negócio..." autoComplete="off" defaultValue={this.props.ramo}/>
             <input className="campoForm" name="servicos" type="text" placeholder="Quais serviços presta?" autoComplete="off" defaultValue={this.props.servicos}/>
             <input className="campoForm" name="rua" type="text" placeholder="Qual rua fica?" autoComplete="off" defaultValue={this.props.rua}/>
             <input className="campoForm" name="cidade" type="text" placeholder="Qual cidade fica?" autoComplete="off" defaultValue={this.props.cidade}/>

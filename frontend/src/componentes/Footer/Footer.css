@@ -3,11 +3,14 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-  bottom: 0;
-  background-color: grey;
-  height: 4em;
+	bottom: 0;
+  left: 0;
+  height: 60px;
+  position: fixed;
   width: 100%;
+  background-color: grey;
+  width: 100%;
+
 }
 
 .footerTexto {

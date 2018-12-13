@@ -24,21 +24,28 @@ class Indicacoes extends Component {
     return (
       <main className="campoIndicacoes">
             <CriarIndicacao empresaId={this.props.empresaId}/>
+            <div className='scroll'>
               <div className="indicacoesFeitas">
                 {indicacoes.map(indicacao => (
-                  <CriarIndicacao
-                  key={indicacao.id}
-                  id={indicacao.id}
-                  idUsuarioIndicador={indicacao.idUsuarioIndicador}
-                  texto={indicacao.texto}
-                  idEmpresa={indicacao.idEmpresa}
-                  />
+                  <div className='indicacaoFeita' key={indicacao.id} id={indicacao.id} >
+                    <div className="indicador">
+                    <div className='nomeIndicador' name="nomeIndicador">Fulano</div>
+                    <div className='termoIndica' name="termoIndica">indica!</div>
+                    </div>
+                    <div className='textoIndicacaoFeita' name="textoIndicacaoFeita">"{indicacao.texto}"</div>
+                  </div>
                 ))}
+              </div>
               </div>
       </main>
     )
   }
 }
+
+
+
+
+
 
 export default connect(
   (state) => ({

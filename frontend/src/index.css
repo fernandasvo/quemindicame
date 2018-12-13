@@ -46,4 +46,6 @@ table {
 
 body {
   font-family: 'Lato', sans-serif;
+	margin-bottom: 60px;
+	display: block
 }

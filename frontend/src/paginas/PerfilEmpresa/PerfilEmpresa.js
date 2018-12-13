@@ -30,15 +30,26 @@ class PerfilEmpresa  extends Component {
 
 
   render(){
+
+
         return(
     <section>
     < Navback />
     <section className="perfilEmpesa">
-            <div className="resumoEmpresa">
-              <div className='white ramoEmpresaPerfil' name="ramoEmpresa">{this.props.empresa.ramo}</div>
-              <div className='white nomeEmpresaPerfil' name="nommeEmpresa">{this.props.empresa.nomeEmpresa}</div>
-              <div className='white servicosEmpresaPerfil' name="servicosEmpresa">{this.props.empresa.servicos}</div>
-            </div>
+
+
+    <section class="container slide">
+           <div class="slide_item">
+              <img className= 'imgsServicosPerfil' src={this.props.empresa.imgsServicos} alt="" title="" />
+               <div class="slide_item_desc">
+                 <div className='white ramoEmpresaPerfil' name="ramoEmpresa">{this.props.empresa.ramo}</div>
+                 <div className='white nomeEmpresaPerfil' name="nomeEmpresa">{this.props.empresa.nomeEmpresa}</div>
+                 <div className='white servicosEmpresaPerfil' name="servicosEmpresa">{this.props.empresa.servicos}</div>
+                 <div className='white descricaoEmpresaPerfil' name="descricaoEmpresa">{this.props.empresa.descricao}</div>
+
+               </div>
+           </div>
+     </section>
 
             <div className='indicacoesEmpresaDiv'>
               <Indicacoes empresaId={this.props.match.params._id} />
@@ -46,9 +57,13 @@ class PerfilEmpresa  extends Component {
 
           <div className='contato'>
 
-            <img className="mapa" src='https://media.wired.com/photos/59269cd37034dc5f91bec0f1/2:1/w_1200,c_limit/GoogleMapTA.jpg' alt="localizacao"/>
+          <div className='mapa'>
+            <iframe src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Rua%20Rio%20de%20Janeiro%2C%20129%20-%20Santos%2C%20SP+(Map)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">  </iframe>
+          </div>
+
 
             <div className='dadosContato' name='dadosContato'>
+            <div>
                   <div className='divContato localizacao'>
                     <img className="iconContato" src={localizacao} alt="localizacao"/>
                     <div className="detalhesContato">
@@ -73,6 +88,7 @@ class PerfilEmpresa  extends Component {
                     </div>
                   </div>
             </div>
+          </div>
         </div>
 
 

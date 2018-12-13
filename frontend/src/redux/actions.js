@@ -82,6 +82,7 @@ export function listaEmpresas() {
         	nomeEmpresa: item.nomeEmpresa,
           ramo: item.ramo,
           servicos: item.servicos,
+          descricao: item.descricao,
           rua: item.rua,
           cidade: item.cidade,
           estado: item.estado,
@@ -152,6 +153,7 @@ export function cadastraEmpresa(dados) {
      nomeEmpresa: dados.nomeEmpresa,
      ramo: dados.ramo,
      servicos: dados.servicos,
+     descricao: dados.descricao,
      rua: dados.rua,
      cidade: dados.cidade,
      estado: dados.estado,
@@ -177,7 +179,7 @@ export function cadastraEmpresa(dados) {
 export function cadastraIndicacao(dados) {
   return (dispatch) => {
     const json = {
-      idUsuarioIndicador: dados.idUsuarioIndicador,
+      //idUsuarioIndicador: dados.idUsuarioIndicador,
       texto: dados.texto,
       idEmpresa: dados.idEmpresa,
       //dataCriacao: "",
@@ -197,7 +199,7 @@ export function alteraIndicacao(dados) {
   return (dispatch) => {
     const url = `/indicacoes/${dados.id}`
     const json = {
-      idUsuarioIndicador: dados.idUsuarioIndicador,
+    //  idUsuarioIndicador: dados.idUsuarioIndicador,
       texto: dados.texto,
       idEmpresa: dados.idEmpresa,
       //dataCriacao: "",
@@ -229,7 +231,7 @@ export function listaIndicacoes(empresaId) {
       .then(response => {
         const dados = response.data.map(item => ({
           id: item._id,
-          idUsuarioIndicador: item.idUsuarioIndicador,
+          //idUsuarioIndicador: item.idUsuarioIndicador,
           texto: item.texto,
           idEmpresa: item.idEmpresa,
           //dataCriacao: "",

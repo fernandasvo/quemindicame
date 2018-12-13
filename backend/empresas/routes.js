@@ -16,6 +16,7 @@ router.post("/", (req,res) =>{
  	 nomeEmpresa: req.body.nomeEmpresa,
    ramo: req.body.ramo,
    servicos: req.body.servicos,
+   descricao:req.body.descricao,
    rua: req.body.rua,
    cidade: req.body.cidade,
    estado: req.body.estado,

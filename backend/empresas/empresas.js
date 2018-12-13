@@ -9,6 +9,7 @@ let EmpresaSchema = new Schema (
 	 nomeEmpresa: { type: String },
    ramo: { type: String },
    servicos: { type: String },
+   descricao:{ type: String },
    rua: { type: String },
    cidade: { type: String },
    estado: { type: String },

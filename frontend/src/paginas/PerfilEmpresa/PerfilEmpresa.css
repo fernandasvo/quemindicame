@@ -44,18 +44,48 @@ table {
 }
 /*FIM RESET CSS---------------------------------*/
 
-.resumoEmpresa{
-  height:500px;
-  background-image: url('https://images.pexels.com/photos/1319461/pexels-photo-1319461.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=1200');
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+.perfilEmpesa{
+	font-family: 'Lato', sans-serif;
 }
+.container{
+	display: flex;
+	width: 100%;
+	height: auto;
+}
+
+.imgsServicosPerfil{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+.slide_item{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.slide_item.first{
+    display: block;
+}
+
+.slide_item_desc{
+    display: flex;
+		align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+    width: inherit;
+    top: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+}
+
 
 .white {
   color: white;
+	max-width: 70%;
 }
 
 .nomeEmpresaPerfil{
@@ -69,14 +99,26 @@ table {
 }
 .servicosEmpresaPerfil{
   font-size: 1.5em;
+
 }
+
+.descricaoEmpresaPerfil{
+	  font-size: 1.1em;
+		text-align: center;
+		padding-top: 80px;
+		line-height: 1.5;
+
+}
+
+
 
 .contato {
   display: flex;
   flex-direction: row;
   height: 400px;
   justify-content: space-between;
-  padding: 20px;
+  padding: 40px;
+	flex-wrap: wrap;
 }
 
 .iconContato{
@@ -88,7 +130,8 @@ margin-right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+
 }
 
 .dadosContato{
@@ -96,11 +139,13 @@ margin-right: 20px;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  min-width: 50%;
+
+
 }
 
 .indicacoesEmpresaDiv{
-  padding: 30px;
+
 }
 
 .contato {
@@ -108,5 +153,16 @@ margin-right: 20px;
 }
 
 .mapa{
-  width: 50%;
+  min-width: 50%;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.detalhesContato{
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 1.2em;
 }
