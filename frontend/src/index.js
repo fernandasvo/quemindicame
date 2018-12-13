@@ -5,11 +5,15 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import { Provider } from 'react-redux'
 import store from './redux/store'
 //Páginas
+import Conta from './paginas/Conta/Conta'
+import Login from './paginas/Login/Login'
 import Busca from './paginas/Busca/Busca'
 import CriarNegocio from './paginas/CriarNegocio/CriarNegocio'
 import Home from './paginas/Home/Home'
 import EditarNegocio from './paginas/EditarNegocio/EditarNegocio'
 import PerfilEmpresa from './paginas/PerfilEmpresa/PerfilEmpresa'
+
+
 //Componentes
 import Navbar from './componentes/Navbar/Navbar'
 import Footer from './componentes/Footer/Footer'
@@ -22,11 +26,15 @@ function App() {
     <div className="app">
 
       <Switch>
+        <Route path="/conta" component={Conta}/>
+        <Route path="/login" component={Login}/>
+        <Route path="/conta" component={Conta}/>
         <Route path="/" exact component={Busca}/>
         <Route path="/criarnegocio" component={CriarNegocio}/>
         <Route path="/home" component={Home}/>
         <Route path="/editarnegocio" component={EditarNegocio}/>
-        <Route path="/perfilempresa" component={PerfilEmpresa}/>
+        <Route path="/perfilempresa/:_id" component={PerfilEmpresa}/>
+
       </Switch>
 
       <Footer />

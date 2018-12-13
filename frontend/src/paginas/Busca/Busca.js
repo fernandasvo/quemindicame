@@ -6,33 +6,55 @@ import { connect } from 'react-redux'
 //Componentes
 import Navbar from '../../componentes/Navbar/Navbar'
 //Actions (redux)
-import { listaEmpresas } from '../../redux/actions'
-
+import { listaEmpresas, getTotalIndicacaoEmpresa } from '../../redux/actions'
 //-------------------------------------------------------------------
 
 
 class Busca extends Component{
   constructor(props){
       super(props)
-      this.state = null
+      this.state = null;
+      this.getTotalIndicacaoEmpresa = getTotalIndicacaoEmpresa.bind(this)
   }
   //FIM CONSTRUCTOR
   componentDidMount() {
     this.props.listaEmpresas()
+
+
   }
   //FIM COMPONENTDIDMOUNT
 
+
+
   render(){
+
+    this.props.empresas.forEach(item =>{
+      //deveria virar um componente
+        if(typeof item.total === "undefined"){ //hack very crazy
+          console.log(item.total, typeof item.total)
+
+           this.getTotalIndicacaoEmpresa(item.id).then(response =>{
+                 item.total =response.data.total
+                 this.setState({uptade:1}) //hack para atualizar o estado do props
+            })
+
+        }
+
+     })
+
+
+
     const empresas = this.props.empresas.filter(
-      item => item.ramo.toLowerCase().includes(this.props.filtro.toLowerCase())
-    )
+      item => item.ramo.toLowerCase().includes(this.props.filtro.toLowerCase()))
 
     return(
       <section>
       < Navbar />
       <div className="cardsEmpresas">
       {empresas.map(empresa =>(
-        <a href='/perfilempresa' className="cardEmpresa" >
+
+        //<EmpresaCard empresa={empresa} />
+        <a key={empresa.id} href={'/perfilempresa/' + empresa.id} className="cardEmpresa">
           <div className="conteudoCard">
               <div className='imagensEmpresa'>
                   <img className='imgsServicos' name="imgsServicos" src={empresa.imgsServicos}/>
@@ -46,7 +68,7 @@ class Busca extends Component{
                 <div className='estadoEmpresa' name="cidadeEmpresa">{empresa.estado}</div>
             </div>
             <div className='indicacoesEmpresa'>
-               <div className='numeroIndicacoes' name="numeroIndicacoes">20</div>
+               <div className='numeroIndicacoes' name="numeroIndicacoes">{empresa.total}</div>
                <div className='termoIndicacoes' name="termoIndicacoes">indicações</div>
             </div>
           </div>

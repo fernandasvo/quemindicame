@@ -3,18 +3,49 @@ import { combineReducers } from 'redux'
 
 //FUNÇÕES
 
+//USUARIOS
+
+let usuarioInicial = null
+
+const json = localStorage.getItem('usuario')
+if (json) {
+  usuarioInicial = JSON.parse(json)
+}
+
+function usuario(state = usuarioInicial, action) {
+  switch(action.type) {
+    case 'LOGA_USUARIO':
+      const usuario = action.dados
+      const json = JSON.stringify(usuario)
+      localStorage.setItem('usuario', json)
+      return usuario
+    case 'DESLOGA_USUARIO':
+      localStorage.removeItem('usuario')
+      return null
+    default:
+      return state
+  }
+}
+
 //EMPRESAS
 
 function empresas (state=[], action){
   switch(action.type){
     case 'CADASTRA_EMPRESA':
-  return state.concat(action.dados)
+      return state.concat(action.dados)
     case 'LISTA_EMPRESAS':
-      return action.dados
+      return action.dados;
+    default:
+    return state
+  }
+}
+
+function empresa (state=[], action){
+  switch(action.type){
       case 'APRESENTA_EMPRESA':
-  return state.map(item =>
-    item.id === action.dados.id ? action.dados : item
-  )
+      console.log(state, action.empresa);
+      return state.empresa =action.empresa
+
     default:
     return state
   }
@@ -55,8 +86,9 @@ function indicacoes(state = [], action) {
 
 //EXPORTS
 const reducers = combineReducers({
-   //usuarios,
+   usuario,
    empresas,
+   empresa,
    indicacoes,
    filtro
   })

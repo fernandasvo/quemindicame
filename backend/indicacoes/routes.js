@@ -45,6 +45,35 @@ router.get("/", (req,res)=>{
       res.send(response)
     })
 })
+//VISUALIZAR INDICACOES POR EMPRESA - GET-----------------------------------------------------
+
+router.get("/empresa", (req,res)=>{
+//  indicacoes.find()
+console.log(req.query.idEmpresa)
+    indicacoes.find({idEmpresa:req.query.idEmpresa}, (error, response) => {
+      if(error){
+        res.send(error)
+      }
+      else{
+      res.send(response)
+    }
+    })
+})
+
+//VISUALIZAR INDICACOES POR EMPRESA - GET-----------------------------------------------------
+
+router.get("/total", (req,res)=>{
+//  indicacoes.find()
+console.log(req.query.idEmpresa)
+    indicacoes.count({idEmpresa:req.query.idEmpresa}, (error, response) => {
+      if(error){
+        res.send(error)
+      }
+      else{
+      res.send({total:response})
+    }
+    })
+})
 
 //FIM - VISUALIZAR INDICAÇÕES - GET------------------------------------------------
 

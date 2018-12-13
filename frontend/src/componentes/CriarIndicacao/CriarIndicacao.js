@@ -20,7 +20,8 @@ class CriarIndicacao extends Component {
       const dados = {
         idUsuarioIndicador: form.idUsuarioIndicador.value,
         texto: form.texto.value,
-        idEmpresa: form.idEmpresa.value,
+        idEmpresa:this.props.empresaId
+
         //dataCriacao: "",
         //dataExclusao: ""
       }
@@ -33,7 +34,7 @@ class CriarIndicacao extends Component {
         id: this.props.id,
         idUsuarioIndicador: form.idUsuarioIndicador.value,
         texto: form.texto.value,
-        idEmpresa: form.idEmpresa.value,
+        idEmpresa: this.props.empresaId,
         //dataCriacao: "",
         //dataExclusao: ""
       }

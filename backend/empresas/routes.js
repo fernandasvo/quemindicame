@@ -61,11 +61,14 @@ router.get("/", (req,res)=>{
 //app.get(envio, (req,res)=>)
 //router.get("/", (req,res)=>{})
 router.get("/:id", (req,res)=>{
+
 //  empresas.findById()
   empresas.findById(
     req.params.id,
     function(error, empresa) {
-    if (error) return res.status(error.code).send(error.message);
+    if (error){
+     return res.status(500).send("como vc eh burro cara");
+    }
      res.send(empresa)
    })
   })

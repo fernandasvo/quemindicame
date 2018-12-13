@@ -13,7 +13,7 @@ class Indicacoes extends Component {
 
   componentDidMount() {
     // if (this.props.usuario) {
-      this.props.listaIndicacoes()
+      this.props.listaIndicacoes(this.props.empresaId)
     // }
 
   }
@@ -23,7 +23,7 @@ class Indicacoes extends Component {
 
     return (
       <main className="campoIndicacoes">
-            <CriarIndicacao />
+            <CriarIndicacao empresaId={this.props.empresaId}/>
               <div className="indicacoesFeitas">
                 {indicacoes.map(indicacao => (
                   <CriarIndicacao

@@ -13,8 +13,63 @@ const api = axios.create(configuracoes)
 export function alteraFiltro(texto) {
   return {type: 'ALTERA_FILTRO',texto }}
 
+//USUARIOS-------------------------------------------------------------------------------------------------
+
+const json = localStorage.getItem('usuario')
+if (json) {
+  const usuario = JSON.parse(json)
+  configuracoes.headers = {
+    'x-access-token': usuario.token
+  }
+}
+
+export function logaUsuario(dados) {
+  return (dispatch) => {
+    const json = {
+      email: dados.email,
+      senha: dados.senha
+    }
+
+    api
+      .post('/login', json)
+      .then(response => {
+        api.defaults.headers.common['x-access-token'] = response.data.token
+        dispatch({ type: 'LOGA_USUARIO', dados: response.data })
+      })
+      .catch(error => {
+        alert('Email ou usuário invalido!')
+      })
+  }
+}
+
+export function deslogaUsuario() {
+  return {
+    type: 'DESLOGA_USUARIO'
+  }
+}
+
+export function cadastraUsuario(dados) {
+  return (dispatch) => {
+    const json = {
+      nome: dados.nome,
+      email: dados.email,
+      senha: dados.senha
+    }
+
+    api
+      .post('/users', json)
+      .then(() => {
+        dispatch(logaUsuario(dados))
+      })
+  }
+}
+
 
 //EMPRESAS-------------------------------------------------------------------------------------------------
+
+export function getTotalIndicacaoEmpresa(empresaId){
+   return api.get('/indicacoes/total?idEmpresa='+empresaId)
+}
 
 export function listaEmpresas() {
   return (dispatch) => {
@@ -42,31 +97,51 @@ export function listaEmpresas() {
   }
 }
 
-export function apresentaEmpresa(dados) {
+
+export function apresentaEmpresa(empresaId) {
   return (dispatch) => {
-    const url = `/empresas/${dados.id}`
-    const json = {
-      idUsuarioProprietario: dados.idUsuarioProprietario,
-      nomeEmpresa: dados.nomeEmpresa,
-      ramo: dados.ramo,
-      servicos: dados.servicos,
-      rua: dados.rua,
-      cidade: dados.cidade,
-      estado: dados.estado,
-      telefone: dados.telefone,
-      celular: dados.celular,
-      email: dados.email,
-      imgsServicos:dados.imgsServicos,
-      //dataCriacao: dados.dataCriacao,
-      //dataExclusao: dados.Exclusao,
-    }
+
+
     api
-      .get(url, json)
-      .then(() => {
-        dispatch({ type: 'APRESENTA_EMPRESA', dados })
+      .get(`/empresas/${empresaId}`)
+      .then(response => {
+        let empresa =  response.data
+
+        dispatch({ type: 'APRESENTA_EMPRESA', empresa })
       })
   }
 }
+
+
+// export function apresentaEmpresa(empresaId) {
+//   return (dispatch) => {
+//     const url = `/empresas/${empresaId}`
+//
+//     api
+//       .get(url)
+//       .then((response) => {console.log(response)
+//       let item = response.data;
+// let empresa = {
+//   id: item._id,
+//   idUsuarioProprietario: item.idUsuarioProprietario,
+//   nomeEmpresa: item.nomeEmpresa,
+//   ramo: item.ramo,
+//   servicos: item.servicos,
+//   rua: item.rua,
+//   cidade: item.cidade,
+//   estado: item.estado,
+//   telefone: item.telefone,
+//   celular: item.celular,
+//   email: item.email,
+//   imgsServicos: item.imgsServicos,
+//   //dataCriacao: item.dataCriacao,
+//    //dataExclusao: item.dataExclusao,
+// }
+//         let res = response.data
+//         dispatch({ type: 'APRESENTA_EMPRESA', empresa})
+//       })
+//   }
+// }
 
 
 
@@ -147,10 +222,10 @@ export function removeIndicacao(id) {
   }
 }
 
-export function listaIndicacoes() {
+export function listaIndicacoes(empresaId) {
   return (dispatch) => {
     api
-      .get('/indicacoes')
+      .get('/indicacoes/empresa?idEmpresa='+empresaId)
       .then(response => {
         const dados = response.data.map(item => ({
           id: item._id,

@@ -5,9 +5,9 @@ var Schema = mongoose.Schema
 let UsuarioSchema = new Schema (
     {
       _id: { type: mongoose.Schema.Types.ObjectId, auto: true },
+      nome: { type: String },
       email: { type: String, unique: true },
       senha: { type: String },
-      imgPerfil: { type: String },
       //dataCriacao: "",
       //dataExclusao: ""
     },

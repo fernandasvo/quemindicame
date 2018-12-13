@@ -36,8 +36,11 @@ render(){
       </div>
       <ul>
           <li>
-            <Link to="/criarnegocio" className="" >
+            <Link to="/criarnegocio" className="criarNegocio" >
               Criar meu negócio
+            </Link>
+            <Link to="/login" className="login" >
+              Login
             </Link>
           </li>
       </ul>
