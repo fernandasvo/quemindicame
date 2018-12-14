@@ -5,6 +5,7 @@ import './Navback.css'
 import back from "./backwhite.png"
 import logo from "./logo.png"
 import { Link } from 'react-router-dom'
+import Menu from '../Menu/Menu'
 
 
 
@@ -17,13 +18,7 @@ function Navback() {
       <Link to="/">
         <img className="logo" src={logo} alt="logo"/>
       </Link>
-      <ul>
-          <li>
-            <Link to="/criarnegocio" className="" >
-              Criar meu negócio
-            </Link>
-          </li>
-      </ul>
+      <Menu />
     </header>
 
 

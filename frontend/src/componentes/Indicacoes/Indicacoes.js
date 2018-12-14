@@ -18,6 +18,15 @@ class Indicacoes extends Component {
 
   }
 
+  habilitaEdicao = () => {
+    this.setState({ editando: true })
+  }
+
+  removeIndicacao = () => {
+    const id = this.props.id
+    this.props.removeIndicacao(id)
+  }
+
   render() {
     const indicacoes = this.props.indicacoes;
 
@@ -27,7 +36,8 @@ class Indicacoes extends Component {
             <div className='scroll'>
               <div className="indicacoesFeitas">
                 {indicacoes.map(indicacao => (
-                  <div className='indicacaoFeita' key={indicacao.id} id={indicacao.id} >
+                  <div className='indicacaoFeita' key={indicacao.id} id={indicacao.id}  >
+
                     <div className="indicador">
                     <div className='nomeIndicador' name="nomeIndicador">Fulano</div>
                     <div className='termoIndica' name="termoIndica">indica!</div>

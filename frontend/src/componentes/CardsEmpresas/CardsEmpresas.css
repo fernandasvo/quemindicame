@@ -1,4 +1,4 @@
-/*RESET css-------------------------------------*/
+*RESET css-------------------------------------*/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -43,45 +43,36 @@ table {
 	border-spacing: 0;
 }
 /*FIM RESET CSS---------------------------------*/
-
-body {
-  font-family: 'Lato', sans-serif;
+a:link
+{
+text-decoration:none;
+color:#00000;
 }
 
-/*header-------------------------------------*/
-.header {
-	display: flex;
-	align-items: center;
-  background-color: #70b1c5;
-  height: 5em;
-  width: 100%;
-	padding-left: 20px;
-}
-
-.logo{
-	max-height: 3.5em;
-}
-/*fim do header-------------------------------------*/
-
-
-/*main-------------------------------------*/
 .cardsEmpresas{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	margin-bottom: 100px;
 
 }
 
 .cardEmpresa{
+  font-family: 'Lato', sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background-color: white;
 	border-radius: 4px;
 	margin: 20px;
-	height: 380px;
+	height: 400px;
 	width: 300px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardEmpresa:hover{
+border-color: #70b1c5;
+box-shadow: 0 0 2px #70b1c5;
 }
 
 .conteudoCard {
@@ -94,7 +85,7 @@ body {
 	width: 100%;
 }
 
-.imgEmpresa{
+.imgsServicos{
 	width: 100%;
 	height: 100%;
 }
@@ -113,15 +104,23 @@ color: grey;
 	font-weight: bolder;
 	font-size: 1.2em;
 	margin-top: 8px;
+	color: black;
 
 }
 
 .servicosEmpresa{
 	font-size: 0.9em;
 	margin-top: 8px;
+	color: black;
 }
 
-.enderecoEmpresa {
+.cidadeEmpresa {
+	font-size: 0.8em;
+	margin-top: 8px;
+	color: grey;
+}
+
+.estadoEmpresa {
 	font-size: 0.8em;
 	margin-top: 8px;
 	color: grey;
@@ -132,6 +131,7 @@ color: grey;
 	justify-content: flex-end;
 	align-items: center;
 	padding-right: 20px;
+	margin-bottom: 20px;
 }
 
 .numeroIndicacoes {
@@ -147,32 +147,3 @@ color: grey;
 	color: #fecf07;
 
 }
-
-.form {
-	display: flex;
-	flex-direction: column;
-	width: 50%;
-
-}
-
-/*fim do main-------------------------------------*/
-
-
-
-/*footer-------------------------------------*/
-.footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  bottom: 0;
-  background-color: grey;
-  height: 4em;
-  width: 100%;
-}
-
-.footerTexto {
-	color: white;
-}
-
-
-/*fim do footer-------------------------------------*/

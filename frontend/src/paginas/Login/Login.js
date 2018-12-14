@@ -53,9 +53,6 @@ class Login extends Component {
       <section>
       <Navback />
       <main className="login">
-        <h1>Login</h1>
-        <p>Entre com seu email e senha.</p>
-
         <Formulario onSubmit={this.enviaDados}>
           <Legenda htmlFor="email">Email:</Legenda>
           <Campo ref={this.emailRef} id="email" type="email" name="email" placeholder="Email" required onChange={this.habilitaOuDesabilitaBotao} />

@@ -73,7 +73,7 @@ class CriarIndicacao extends Component {
           defaultValue={this.props.texto}
         />
           {(cadastrando || this.state.editando) && (
-          <button className="indicacao__botao-concluir">
+          <button className="botao-concluir">
             Eu indico!
           </button>
         )}

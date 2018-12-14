@@ -47,7 +47,7 @@ table {
 	font-family: 'Lato', sans-serif;
 }
 
-.header {
+.navbar {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -61,6 +61,10 @@ table {
 	max-height: 3.5em;
 }
 
-.filtro {
-	width: 40%;
+.filtro{
+	width: 100%;
+}
+
+.campoFiltro {
+	width: 500px;
 }

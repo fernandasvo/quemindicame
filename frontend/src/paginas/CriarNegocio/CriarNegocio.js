@@ -3,6 +3,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 //componentes
 import Navback from '../../componentes/Navback/Navback'
+import Campo from '../../componentes/Campo/Campo'
+import Botao from '../../componentes/Botao/Botao'
 //Actions
 import { cadastraEmpresa } from '../../redux/actions'
 //Style
@@ -24,7 +26,7 @@ class CriarNegocio extends Component {
 
     if (cadastrando) {
       const dados = {
-        idUsuarioProprietario: form.idUsuarioProprietario.value,
+        // idUsuarioProprietario: form.idUsuarioProprietario.value,
         nomeEmpresa: form.nomeEmpresa.value,
         ramo: form.ramo.value,
         servicos: form.servicos.value,
@@ -52,9 +54,8 @@ class CriarNegocio extends Component {
     return (
       <section>
       < Navback />
-
+      <div className='divForm'>
           <form className="formCriarEmpresa" onSubmit={this.cadastraEmpresa}>
-            <input className="campoForm" name="idUsuarioProprietario" type="text" placeholder="idUsuarioProprietario?" autoComplete="off" defaultValue={this.props.idUsuarioProprietario}/>
             <input className="campoForm" name="nomeEmpresa" type="text" placeholder="Qual o nome do seu negócio?" autoComplete="off" defaultValue={this.props.nomeEmpresa}/>
             <input className="campoForm" name="ramo" type="text" placeholder="Qual o ramo do seu negócio?" autoComplete="off" defaultValue={this.props.ramo}/>
             <input className="campoForm" name="descricao" type="text" placeholder="Fale um pouco sobre seu negócio..." autoComplete="off" defaultValue={this.props.ramo}/>
@@ -66,10 +67,10 @@ class CriarNegocio extends Component {
             <input className="campoForm" name="celular" type="text" placeholder="Qual o celular?" autoComplete="off" defaultValue={this.props.celular}/>
             <input className="campoForm" name="email" type="text" placeholder="Qual o e-mail?" autoComplete="off" defaultValue={this.props.email}/>
             <input className="campoForm" name="imgsServicos" type="text" placeholder="Insira o link de uma imagem aqui" autoComplete="off" defaultValue={this.props.imgsServicos}/>
-            {(cadastrando || this.state.editando) && (<button className="campoForm">Criar meu negócio!</button>)}
+            <Botao desabilitado={this.state.desabilitado}>Criar meu negócio!</Botao>
           </form>
+        </div>
       </section>
-
     )
   }
 }

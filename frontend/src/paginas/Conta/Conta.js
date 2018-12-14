@@ -61,10 +61,9 @@ class Conta extends Component {
     }
 
     return (
+      <section>
+      <Navback/>
       <main className="conta">
-        <h1>Conta</h1>
-        <p>Envie o formulário para criar uma conta!</p>
-
         <form onSubmit={this.enviaDados}>
           <Legenda htmlFor="nome">Nome:</Legenda>
           <Campo ref={this.nomeRef} id="nome" type="text" name="nome" placeholder="Nome" required minLength={10} onChange={this.habilitaOuDesabilita} />
@@ -80,6 +79,7 @@ class Conta extends Component {
           <Link url="/login">Fazer login</Link>
         </form>
       </main>
+      </section>
     )
   }
 }

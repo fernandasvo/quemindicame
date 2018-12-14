@@ -5,8 +5,10 @@
   display: block;
   width: 100%;
   padding: 0.8rem;
-  border: 0px;
+  border-style:solid;
+  border-width: 1px;
   border-radius: 4px;
+  border-color: #f1f3f5;
 }
 
 .campo:focus {

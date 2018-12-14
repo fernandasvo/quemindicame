@@ -23,18 +23,17 @@
   margin-left: auto;
 }
 
-.indicacao__botao-concluir {
+.botao-concluir {
   cursor: pointer;
   text-transform: uppercase;
   margin-left: auto;
-  position: absolute;
-  bottom: 0;
   font-weight: bold;
 }
 
 .indicacao__titulo,
 .indicacao__texto,
-.indicacao__botao-concluir {
+.botao-concluir
+{
   font-size: inherit;
   font-family: 'Lato', sans-serif;
 }
@@ -42,7 +41,8 @@
 .indicacao__titulo,
 .indicacao__texto,
 .indicacao__botao-remover,
-.indicacao__botao-concluir {
+.botao-concluir
+{
   pointer-events: auto;
   padding: 0.5rem;
   border: none;
@@ -51,7 +51,7 @@
 
 .indicacao__titulo:focus,
 .indicacao__texto:focus,
-.indicacao__botao-concluir:focus {
+.botao-concluir:focus {
   outline: none;
 }
 

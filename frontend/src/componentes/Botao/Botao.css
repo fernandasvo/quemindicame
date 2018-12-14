@@ -1,13 +1,15 @@
 .botao {
+  font-family: "Lato", sans-serif;
   color: white;
   font-size: 1.3rem;
   font-weight: bold;
   width: 100%;
   padding: 0.8rem;
   margin-bottom: 1rem;
-  background: #9351b4;
-  border: 1px solid #9351b4;
+  background: #fecf07;
+  border: 1px solid #fecf07;
   border-radius: 5px;
+  margin-top:20px;
 }
 
 .botao--desabilitado {
