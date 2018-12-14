@@ -12,7 +12,7 @@ const app = express();
 //C�digo-------------------------------------------------
 
 //Criando espa�o e conex�o com BD- MONGOOSE
-mongoose.connect("mongodb://localhost:27017/quemindica")
+mongoose.connect("mongodb+srv://fernandasvo:pecompe63649090@quemindicame-mrgyu.mongodb.net/test?retryWrites=true")
 var db = mongoose.connection;
 db.on("error", console.error.bind(console, "Erro de conex�o."));
 db.once("open", function() {
