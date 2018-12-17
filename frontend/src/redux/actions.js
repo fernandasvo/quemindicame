@@ -3,7 +3,7 @@ import axios from 'axios'
 
 //CONFIGURAÇÕES FRONT(axios) X API
 const configuracoes = {
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'http://www.quemindica.me:5000/api'
 }
 const api = axios.create(configuracoes)
 
